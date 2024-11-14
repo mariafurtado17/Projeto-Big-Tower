@@ -1,0 +1,66 @@
+body {
+    background-color: #fff5e4; /* Cor de fundo */
+    font-family:Libre Baskerville;
+}
+
+.titulo {
+   
+    font-size: 70px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    transition: color 0.3s;
+    position: relative;
+    text-shadow: 1px 1px 2px #d9bfae; /* Sombra leve */
+}
+.titulo:hover {
+    color: #625d5a; /* Efeito hover para o título */
+}
+
+.carrossel {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .navegacao {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 24px;
+            user-select: none;
+        }
+
+        .video-embed {
+            max-width: 600px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+           
+        }
